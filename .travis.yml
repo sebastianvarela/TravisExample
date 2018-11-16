@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode10
+
+script:
+- xcodebuild -project TravisExample.xcodeproj -scheme TravisExample -destination "platform=iOS Simulator,name=iPhone 7" -configuration Debug -enableCodeCoverage YES clean build test | xcpretty -f `xcpretty-travis-formatter`
