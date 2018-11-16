@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		38B923DE219ED31800A0E3D8 /* TravisExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B923D4219ED31800A0E3D8 /* TravisExample.framework */; };
-		38B923E3219ED31800A0E3D8 /* TravisExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B923E2219ED31800A0E3D8 /* TravisExampleTests.swift */; };
 		38B923E5219ED31800A0E3D8 /* TravisExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B923D7219ED31800A0E3D8 /* TravisExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38B923EF219ED84500A0E3D8 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B923EE219ED84500A0E3D8 /* Calculator.swift */; };
 		38B923F1219ED8C800A0E3D8 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B923F0219ED8C800A0E3D8 /* CalculatorTests.swift */; };
@@ -29,7 +28,6 @@
 		38B923D7219ED31800A0E3D8 /* TravisExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravisExample.h; sourceTree = "<group>"; };
 		38B923D8219ED31800A0E3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38B923DD219ED31800A0E3D8 /* TravisExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38B923E2219ED31800A0E3D8 /* TravisExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisExampleTests.swift; sourceTree = "<group>"; };
 		38B923E4219ED31800A0E3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38B923EE219ED84500A0E3D8 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		38B923F0219ED8C800A0E3D8 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
@@ -57,8 +55,8 @@
 		38B923CA219ED31800A0E3D8 = {
 			isa = PBXGroup;
 			children = (
-				38B923D6219ED31800A0E3D8 /* TravisExample */,
-				38B923E1219ED31800A0E3D8 /* TravisExampleTests */,
+				38B923D6219ED31800A0E3D8 /* Source */,
+				38B923E1219ED31800A0E3D8 /* Tests */,
 				38B923D5219ED31800A0E3D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,24 +70,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38B923D6219ED31800A0E3D8 /* TravisExample */ = {
+		38B923D6219ED31800A0E3D8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				38B923D7219ED31800A0E3D8 /* TravisExample.h */,
 				38B923D8219ED31800A0E3D8 /* Info.plist */,
 				38B923EE219ED84500A0E3D8 /* Calculator.swift */,
 			);
-			path = TravisExample;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		38B923E1219ED31800A0E3D8 /* TravisExampleTests */ = {
+		38B923E1219ED31800A0E3D8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				38B923E2219ED31800A0E3D8 /* TravisExampleTests.swift */,
 				38B923F0219ED8C800A0E3D8 /* CalculatorTests.swift */,
 				38B923E4219ED31800A0E3D8 /* Info.plist */,
 			);
-			path = TravisExampleTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38B923E3219ED31800A0E3D8 /* TravisExampleTests.swift in Sources */,
 				38B923F1219ED8C800A0E3D8 /* CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +353,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TravisExample/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,7 +379,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TravisExample/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -403,7 +399,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TravisExampleTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,7 +417,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TravisExampleTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

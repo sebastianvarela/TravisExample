@@ -1,11 +1,3 @@
-//
-//  CalculatorTests.swift
-//  TravisExampleTests
-//
-//  Created by Autentia on 16/11/2018.
-//  Copyright © 2018 Autentia. All rights reserved.
-//
-
 import XCTest
 @testable import TravisExample
 
